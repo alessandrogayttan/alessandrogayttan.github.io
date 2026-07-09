@@ -56,4 +56,21 @@
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('[data-category]');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      filterBtns.forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      projectItems.forEach((item) => {
+        const cats = item.dataset.category.split(' ');
+        const show = filter === 'all' || cats.includes(filter);
+        item.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
 })();
