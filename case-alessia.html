@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: Alessia — AI WhatsApp and web chat assistant for Inpulso 43 with Gemini, Flask, and Docker.">
+  <title>Alessia Case Study | Alessandro Gayttan</title>
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="case-page">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orb orb--red" aria-hidden="true"></div>
+  <div class="orb orb--blue" aria-hidden="true"></div>
+
+  <header class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__logo">AG<span class="nav__dot">.</span></a>
+    <nav class="nav__links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="nav__cta">GitHub ↗</a>
+  </header>
+
+  <main class="case-study">
+    <header class="case-study__hero reveal">
+      <a href="index.html" class="case-study__back">← Back to portfolio</a>
+      <p class="eyebrow">Case study</p>
+      <h1>Alessia</h1>
+      <p class="case-study__subtitle">AI receptionist for WhatsApp and web — books appointments, manages workshops, sends reminders, and escalates to humans when needed.</p>
+      <div class="case-study__meta">
+        <span class="tag tag--live">Live in production</span>
+        <span class="tag">Open source</span>
+        <span class="tag">Python · Flask · Gemini</span>
+      </div>
+      <div class="case-study__links">
+        <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="btn btn--primary">GitHub repository ↗</a>
+        <a href="https://inpulso43.com" target="_blank" rel="noopener" class="btn btn--ghost">See on live site ↗</a>
+      </div>
+    </header>
+
+    <section class="case-study__section reveal">
+      <h2>Client goals</h2>
+      <p>Inpulso 43 needed to scale customer reception without hiring more staff. Patients message at all hours — booking evaluations, asking prices, joining workshop waitlists. The team couldn't respond to everyone manually.</p>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Problem</h2>
+      <ul class="case-list">
+        <li>Dozens of WhatsApp messages daily with repetitive questions</li>
+        <li>Manual appointment scheduling in Google Calendar</li>
+        <li>No automated reminders or waitlist management</li>
+        <li>Website buttons opened generic WhatsApp — no context, no tracking</li>
+      </ul>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Solution</h2>
+      <p>Alessia is a conversational AI built with Google Gemini and Flask. It runs on DigitalOcean with Docker and connects to WhatsApp Business API, Google Calendar, Google Sheets, and a SQLite database.</p>
+      <div class="modules-grid">
+        <article class="module-card"><h3>WhatsApp reception</h3><p>Handles patient messages 24/7 with warm, human-like responses in Spanish.</p></article>
+        <article class="module-card"><h3>Web chat widget</h3><p>Same brain powers a floating chat on inpulso43.com — unified API.</p></article>
+        <article class="module-card"><h3>25+ business tools</h3><p>Book, reschedule, cancel appointments; manage workshops; confirm payments; escalate to humans.</p></article>
+        <article class="module-card"><h3>Automated jobs</h3><p>Appointment reminders, waitlist notifications, and scheduled background tasks.</p></article>
+      </div>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Architecture</h2>
+      <div class="arch-diagram" role="img" aria-label="Alessia architecture diagram">
+        <div class="arch-row">
+          <div class="arch-box">Patient<br><small>WhatsApp / Web</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-box--accent">Flask API<br><small>servidor.py</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box">Gemini AI<br><small>chat.py + tools</small></div>
+        </div>
+        <div class="arch-row arch-row--below">
+          <div class="arch-box">Google Calendar</div>
+          <div class="arch-box">Google Sheets</div>
+          <div class="arch-box">SQLite</div>
+          <div class="arch-box">Meta WhatsApp API</div>
+        </div>
+      </div>
+      <p class="section-desc" style="margin-top:1rem">Modular Python monolith: webhook handler, AI conversation layer, business tools, and job scheduler — deployed with Gunicorn + Docker on DigitalOcean.</p>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Why these technologies</h2>
+      <ul class="case-list">
+        <li><strong>Python + Flask</strong> — Fast to iterate, excellent for AI integrations and webhooks</li>
+        <li><strong>Gemini</strong> — Strong Spanish conversation and reliable function calling for business tools</li>
+        <li><strong>SQLite</strong> — Lightweight persistence for patient memory and job queues at this scale</li>
+        <li><strong>Docker</strong> — Consistent deployments and easy scaling on DigitalOcean</li>
+      </ul>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Results</h2>
+      <div class="results-grid">
+        <div class="result-card"><strong>24/7</strong><span>Automated reception</span></div>
+        <div class="result-card"><strong>25+</strong><span>Business tools integrated</span></div>
+        <div class="result-card"><strong>2 channels</strong><span>WhatsApp + web chat</span></div>
+        <div class="result-card"><strong>Open source</strong><span>Public GitHub repo</span></div>
+      </div>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Screenshots</h2>
+      <div class="screenshots-duo">
+        <figure>
+          <img src="assets/screenshots/inpulso-home.png" alt="Inpulso 43 with Alessia web chat" loading="lazy" width="700" height="400">
+          <figcaption>Desktop — inpulso43.com with chat widget</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/inpulso-home-mobile.png" alt="Inpulso 43 mobile" loading="lazy" width="390" height="844" class="screenshot-mobile">
+          <figcaption>Mobile — responsive site + chat</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="testimonial reveal">
+      <blockquote class="testimonial__quote">"The AI assistant handles our WhatsApp professionally — patients book evaluations and ask about workshops without waiting for office hours."</blockquote>
+      <footer class="testimonial__author">
+        <div class="testimonial__avatar">I43</div>
+        <div><strong>Inpulso 43 Team</strong><span>Human Development Center</span></div>
+      </footer>
+    </section>
+
+    <section class="case-study__section reveal">
+      <h2>Technologies</h2>
+      <div class="tech-row">
+        <span>Python</span><span>Flask</span><span>Gemini</span><span>Docker</span><span>SQLite</span>
+        <span>WhatsApp API</span><span>Google Calendar</span><span>Gunicorn</span><span>DigitalOcean</span>
+      </div>
+    </section>
+
+    <section class="case-study__cta reveal">
+      <h2>Need an AI assistant for your business?</h2>
+      <a href="#" data-wa class="btn btn--wa btn--lg">Discuss on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Alessandro Gayttan</p>
+    <a href="index.html">← Portfolio</a>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

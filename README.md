@@ -1,25 +1,30 @@
 # Alessandro Gayttan — Portfolio
 
-Client-focused portfolio for freelance web development, AI automations, and SEO services.
+Client-focused portfolio: websites, business systems, and AI automations.
 
 **Live:** [alessandrogayttan.github.io](https://alessandrogayttan.github.io)
 
 ## Pages
 
-| Page | Description |
-|------|-------------|
-| `index.html` | Main portfolio — services, real projects, contact |
-| `case-inpulso.html` | Full case study for Inpulso 43 |
+| Page | URL |
+|------|-----|
+| Home | `/index.html` |
+| About | `/about.html` |
+| Inpulso case study | `/case-inpulso.html` |
+| Alessia case study | `/case-alessia.html` |
 
-## Real projects featured
+## Customize (see DOMAIN-SETUP.md)
 
-- **Inpulso 43** — [inpulso43.com](https://inpulso43.com)
-- **Alessia** — [GitHub](https://github.com/alessandrogayttan/alessia-whatsapp)
-- **This portfolio** — GitHub Pages
+1. **`site-config.js`** — WhatsApp, Calendly, LinkedIn, email
+2. **`assets/photo.jpg`** — Your professional headshot
+3. **`CNAME`** — When you buy a custom domain
 
-## Customize
+## Refresh screenshots
 
-- Replace the `AG` photo placeholder in `index.html` with your professional headshot
-- Update the WhatsApp number in all `wa.me` links if needed
+```bash
+python scripts/capture-screenshots.py
+```
+
+Requires: `python -m pip install playwright && python -m playwright install chromium`
 
 © 2026 Alessandro Gayttan
