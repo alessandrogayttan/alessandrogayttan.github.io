@@ -1,26 +1,25 @@
-# Portafolio — Alessandro Gayttan
+# Alessandro Gayttan — Portfolio
 
-Portafolio profesional con los proyectos **Inpulso 43** y **Alessia**.
+Client-focused portfolio for freelance web development, AI automations, and SEO services.
 
-## Vista en vivo
+**Live:** [alessandrogayttan.github.io](https://alessandrogayttan.github.io)
 
-Publicado en GitHub Pages: [alessandrogayttan.github.io](https://alessandrogayttan.github.io)
+## Pages
 
-## Proyectos destacados
+| Page | Description |
+|------|-------------|
+| `index.html` | Main portfolio — services, real projects, contact |
+| `case-inpulso.html` | Full case study for Inpulso 43 |
 
-| Proyecto | Descripción | Enlace |
-|----------|-------------|--------|
-| **Inpulso 43** | Plataforma web integral de bienestar | [inpulso43.com](https://inpulso43.com) |
-| **Alessia** | Asistente IA para WhatsApp y chat web | [GitHub](https://github.com/alessandrogayttan/alessia-whatsapp) |
+## Real projects featured
 
-## Desarrollo local
+- **Inpulso 43** — [inpulso43.com](https://inpulso43.com)
+- **Alessia** — [GitHub](https://github.com/alessandrogayttan/alessia-whatsapp)
+- **This portfolio** — GitHub Pages
 
-Abre `index.html` en el navegador o sirve la carpeta con cualquier servidor estático.
+## Customize
 
-```bash
-python -m http.server 8080
-```
-
-## Licencia
+- Replace the `AG` photo placeholder in `index.html` with your professional headshot
+- Update the WhatsApp number in all `wa.me` links if needed
 
 © 2026 Alessandro Gayttan
