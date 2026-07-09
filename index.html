@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Alessandro Gayttan — Desarrollo web, IA conversacional y plataformas digitales para bienestar.">
+  <meta property="og:title" content="Alessandro Gayttan | Desarrollador & Creador Digital">
+  <meta property="og:description" content="Proyectos destacados: Alessia (asistente IA) e Inpulso 43 (plataforma integral de bienestar).">
+  <meta property="og:type" content="website">
+  <title>Alessandro Gayttan | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orb orb--red" aria-hidden="true"></div>
+  <div class="orb orb--blue" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo">AG<span class="nav__dot">.</span></a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="https://github.com/alessandrogayttan" target="_blank" rel="noopener" class="nav__cta">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.5 11.5 0 0 1 12 5.8c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.479 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__badge reveal">
+        <span class="pulse"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero__title reveal">
+        <span class="hero__line">Construyo</span>
+        <span class="hero__line hero__line--accent">experiencias digitales</span>
+        <span class="hero__line">que conectan personas.</span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        Desarrollador full-stack especializado en plataformas web de alto impacto,
+        asistentes con IA y productos que combinan diseño premium con ingeniería sólida.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="https://inpulso43.com" target="_blank" rel="noopener" class="btn btn--ghost">Sitio en producción ↗</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-count="2">0</span>
+          <span class="stat__label">Proyectos flagship</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="40">0</span><span class="stat__suffix">+</span>
+          <span class="stat__label">Módulos PHP integrados</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="25">0</span><span class="stat__suffix">+</span>
+          <span class="stat__label">Herramientas IA en Alessia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+      <div class="section-head reveal">
+        <p class="eyebrow">Trabajo destacado</p>
+        <h2>Proyectos que hablan<br><em>por sí solos</em></h2>
+      </div>
+
+      <article class="project-card project-card--featured reveal">
+        <div class="project-card__visual project-card__visual--inpulso">
+          <div class="project-card__mock">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <div class="mock-url">inpulso43.com</div>
+            </div>
+            <div class="mock-screen">
+              <div class="mock-hero"></div>
+              <div class="mock-grid">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <div class="project-card__meta">
+            <span class="tag tag--live">En producción</span>
+            <span class="tag">2024 — 2026</span>
+          </div>
+          <h3>Inpulso 43</h3>
+          <p class="project-card__desc">
+            Plataforma integral para un centro de desarrollo humano en Zapopan.
+            Sitio de marketing cinematográfico, campus LMS con certificados,
+            área social "Tu Espacio", podcast, tienda de talleres con pagos Stripe
+            y widget de chat con Alessia integrado en tiempo real.
+          </p>
+          <ul class="feature-list">
+            <li>40+ páginas PHP con GSAP, Lenis y Swiper</li>
+            <li>CMS propio con SQLite y panel administrativo</li>
+            <li>Campus virtual con constancias verificables</li>
+            <li>Despliegue automatizado a Hostinger</li>
+          </ul>
+          <div class="tech-row">
+            <span>PHP</span><span>SQLite</span><span>GSAP</span><span>Stripe</span><span>Apache</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://inpulso43.com" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Visitar sitio ↗</a>
+            <a href="https://inpulso43.com/talleres" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Talleres</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--reverse reveal">
+        <div class="project-card__visual project-card__visual--alessia">
+          <div class="chat-demo">
+            <div class="chat-demo__header">
+              <div class="chat-demo__avatar">A</div>
+              <div>
+                <strong>Alessia</strong>
+                <span>Asistente · Inpulso 43</span>
+              </div>
+              <span class="chat-demo__status">En línea</span>
+            </div>
+            <div class="chat-demo__messages">
+              <div class="msg msg--bot">¡Hola! Soy Alessia 💙 ¿En qué puedo ayudarte hoy?</div>
+              <div class="msg msg--user">Quiero agendar una evaluación inicial</div>
+              <div class="msg msg--bot">Con gusto. Tengo disponibilidad el jueves a las 10:00 y 16:30. ¿Cuál te funciona mejor?</div>
+              <div class="msg msg--typing"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <div class="project-card__meta">
+            <span class="tag tag--live">En producción</span>
+            <span class="tag">Open Source</span>
+          </div>
+          <h3>Alessia</h3>
+          <p class="project-card__desc">
+            Asistente conversacional con IA para WhatsApp y chat web.
+            Atiende pacientes con empatía real, agenda citas en Google Calendar,
+            gestiona talleres, recordatorios automáticos, pagos y escalación a humanos —
+            todo desplegado en DigitalOcean con Docker.
+          </p>
+          <ul class="feature-list">
+            <li>Gemini AI con 25+ herramientas de negocio</li>
+            <li>WhatsApp Business API + chat web embebido</li>
+            <li>Integración Google Calendar & Sheets</li>
+            <li>Recordatorios, lista de espera y dashboard</li>
+          </ul>
+          <div class="tech-row">
+            <span>Python</span><span>Flask</span><span>Gemini</span><span>Docker</span><span>SQLite</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver repositorio</a>
+            <a href="https://alessia-whatsapp-jbems.ondigitalocean.app" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">API en vivo</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="integration reveal">
+        <div class="integration__icon">⟷</div>
+        <div>
+          <h4>Integración Alessia × Inpulso</h4>
+          <p>Los botones del sitio, el widget flotante y el chat web comparten la misma API de Alessia — una experiencia unificada desde la web hasta WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack" id="stack">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tecnologías</p>
+        <h2>Stack que domino</h2>
+      </div>
+      <div class="stack-grid reveal">
+        <div class="stack-card">
+          <h4>Frontend</h4>
+          <p>HTML5, CSS3, JavaScript, GSAP, Lenis, Swiper, diseño responsive y glass morphism.</p>
+        </div>
+        <div class="stack-card">
+          <h4>Backend</h4>
+          <p>PHP, Python, Flask, SQLite, PDO, APIs REST, webhooks y arquitectura monolítica modular.</p>
+        </div>
+        <div class="stack-card">
+          <h4>IA & Automatización</h4>
+          <p>Google Gemini, function calling, memoria conversacional, colas de mensajes y observabilidad.</p>
+        </div>
+        <div class="stack-card">
+          <h4>Integraciones</h4>
+          <p>WhatsApp Business API, Google Calendar/Sheets, Stripe, Meta webhooks y DigitalOcean.</p>
+        </div>
+        <div class="stack-card">
+          <h4>DevOps</h4>
+          <p>Docker, Gunicorn, Git, GitHub Pages, Hostinger FTP y scripts de despliegue.</p>
+        </div>
+        <div class="stack-card">
+          <h4>Diseño</h4>
+          <p>UI cinematográfica, tipografía editorial, animaciones de scroll y UX orientada a conversión.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact__inner reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Tienes un proyecto<br>en mente?</h2>
+        <p>Construyo productos digitales de principio a fin — desde la idea hasta producción.</p>
+        <div class="contact__links">
+          <a href="mailto:alessandrogayttan@gmail.com" class="contact-link">
+            <span class="contact-link__label">Email</span>
+            <span class="contact-link__value">alessandrogayttan@gmail.com</span>
+          </a>
+          <a href="https://github.com/alessandrogayttan" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__label">GitHub</span>
+            <span class="contact-link__value">@alessandrogayttan</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Alessandro Gayttan. Hecho con dedicación.</p>
+    <a href="#inicio">↑ Volver arriba</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
