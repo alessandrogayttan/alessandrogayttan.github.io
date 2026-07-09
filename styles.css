@@ -333,14 +333,13 @@ section {
   background: rgba(0, 0, 0, 0.3); padding: 4px 10px; border-radius: 6px; margin-left: 8px;
 }
 
-.browser-frame__screen { height: 200px; background-size: cover; background-position: top center; }
-
-.browser-frame__screen--inpulso {
-  background: linear-gradient(160deg, #1a1f2e 0%, #2d4f82 40%, #f7f5f0 40%, #f7f5f0 100%);
+.browser-frame__screen {
+  height: 220px; overflow: hidden; background: #111;
 }
 
-.browser-frame__screen--portfolio {
-  background: linear-gradient(160deg, #08090c 0%, #111318 50%, #c64a49 50%, #08090c 100%);
+.browser-frame__screen img {
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  display: block;
 }
 
 /* Chat demo */
@@ -594,24 +593,24 @@ section {
 }
 
 .screenshot-card {
-  height: 140px; border-radius: 14px; overflow: hidden;
-  display: flex; align-items: flex-end; padding: 1rem;
-  background-size: cover; background-position: center;
-  border: 1px solid var(--glass-border);
+  position: relative; height: 180px; border-radius: 14px; overflow: hidden;
+  display: block; border: 1px solid var(--glass-border);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.screenshot-card img {
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  display: block;
 }
 
 .screenshot-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); }
 
 .screenshot-card span {
+  position: absolute; bottom: 0.75rem; left: 0.75rem;
   font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
-  background: rgba(0, 0, 0, 0.6); padding: 0.35rem 0.75rem; border-radius: 6px;
+  background: rgba(0, 0, 0, 0.72); padding: 0.35rem 0.75rem; border-radius: 6px;
+  backdrop-filter: blur(8px);
 }
-
-.screenshot-card--home { background: linear-gradient(135deg, #1a1f2e, #2d4f82); }
-.screenshot-card--talleres { background: linear-gradient(135deg, #2d4f82, #c64a49); }
-.screenshot-card--campus { background: linear-gradient(135deg, #1e3a62, #4ade80); }
-.screenshot-card--nosotros { background: linear-gradient(135deg, #f7f5f0, #2d4f82); color: #1a1f2e; }
 
 .case-study__cta {
   text-align: center; padding: 3rem 2rem; margin-top: 2rem;
