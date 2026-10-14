@@ -3,45 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case study: Alessia — AI WhatsApp and web chat assistant for Inpulso 43 with Gemini, Flask, and Docker.">
+  <meta name="description" content="Case study: Alessia — WhatsApp AI assistant for Inpulso 43 with Gemini, Flask, and Docker.">
   <title>Alessia Case Study | Alessandro Gayttan</title>
   <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="glass.css">
 </head>
 <body class="case-page">
   <div class="grain" aria-hidden="true"></div>
   <div class="orb orb--red" aria-hidden="true"></div>
   <div class="orb orb--blue" aria-hidden="true"></div>
 
-  <header class="nav nav--scrolled" id="nav">
-    <a href="index.html" class="nav__logo">AG<span class="nav__dot">.</span></a>
-    <nav class="nav__links">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="nav__cta">GitHub ↗</a>
-  </header>
+  <header class="nav glass-surface" id="nav">
+<a href="index.html" class="nav__logo" aria-label="Alessandro Gayttan home">AG<span class="nav__dot">/</span></a>
+<button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+<nav class="nav__links" id="navLinks" aria-label="Main navigation"><a href="index.html#work">Selected work</a><a href="index.html#expertise">Expertise</a><a href="about.html">About me</a><a href="resume.html">Résumé</a></nav>
+<a href="mailto:alessandrogayttan@gmail.com" class="nav__cta">Let’s talk <span aria-hidden="true">↗</span></a></header>
 
-  <main class="case-study">
+  <a href="#main" class="skip-link">Skip to content</a><main class="case-study" id="main">
     <header class="case-study__hero reveal">
       <a href="index.html" class="case-study__back">← Back to portfolio</a>
       <p class="eyebrow">Case study</p>
       <h1>Alessia</h1>
-      <p class="case-study__subtitle">AI receptionist for WhatsApp and web — books appointments, manages workshops, sends reminders, and escalates to humans when needed.</p>
+      <p class="case-study__subtitle">The AI assistant for Inpulso 43, working inside WhatsApp. It connects conversations to appointment workflows, workshop information, reminders, and human support.</p>
       <div class="case-study__meta">
         <span class="tag tag--live">Live in production</span>
-        <span class="tag">Open source</span>
+        <span class="tag">Public repository</span>
         <span class="tag">Python · Flask · Gemini</span>
       </div>
       <div class="case-study__links">
         <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="btn btn--primary">GitHub repository ↗</a>
-        <a href="https://inpulso43.com" target="_blank" rel="noopener" class="btn btn--ghost">See on live site ↗</a>
+        <a href="https://wa.me/523324453536?text=Hola%20Alessia%2C%20me%20gustar%C3%ADa%20conocer%20los%20servicios%20de%20Inpulso%2043." target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Open Inpulso on WhatsApp ↗</a>
       </div>
     </header>
 
+    <section class="case-study__section alessia-showcase reveal" id="demo"><div><p class="eyebrow">THE EXPERIENCE</p><h2>Inside WhatsApp.<br>Connected to the business.</h2><p>Alessia is the assistant, not the Inpulso website. Select a scenario to explore an illustrative conversation in Spanish.</p><p>The examples run locally in this page. For the real service, open Inpulso 43 on WhatsApp.</p><a class="btn btn--whatsapp" href="https://wa.me/523324453536?text=Hola%20Alessia%2C%20me%20gustar%C3%ADa%20conocer%20los%20servicios%20de%20Inpulso%2043." target="_blank" rel="noopener noreferrer">Open Inpulso on WhatsApp ↗</a></div><div class="alessia-demo" data-chat-demo>
+  <div class="phone-shell glass-surface">
+    <div class="phone-topline" aria-hidden="true"><span>INPULSO 43</span><span class="phone-island"></span><span>WHATSAPP</span></div>
+    <div class="phone-header"><span class="alessia-avatar" aria-hidden="true">a.</span><div><strong>Alessia</strong><span>AI assistant for Inpulso 43</span></div><span class="channel-mark" aria-label="WhatsApp">↗</span></div>
+    <p class="demo-disclosure">ILLUSTRATIVE DEMO · NOT A LIVE CHAT</p>
+    <div class="chat-messages" lang="es" aria-live="polite" aria-atomic="true">
+      <p class="chat-bubble chat-bubble--incoming">Hola, soy Alessia, el asistente de IA de Inpulso 43. ¿En qué puedo ayudarte?</p>
+      <p class="chat-bubble chat-bubble--outgoing" data-demo-question>Quiero agendar una cita.</p>
+      <p class="chat-bubble chat-bubble--incoming" data-demo-answer>Puedo ayudarte a consultar opciones y coordinar tu cita. ¿Qué servicio te interesa?</p>
+    </div>
+    <div class="demo-options" role="group" aria-label="Choose an illustrative conversation"><button type="button" data-scenario="appointment" aria-pressed="true">Appointments</button><button type="button" data-scenario="workshop" aria-pressed="false">Workshops</button><button type="button" data-scenario="human" aria-pressed="false">Human support</button></div>
+    <div class="phone-bottom"><span>AI + business tools + human handoff</span><span aria-hidden="true">↗</span></div>
+  </div>
+  <p class="demo-caption">A product you can understand in one conversation.</p>
+</div></section>
     <section class="case-study__section reveal">
       <h2>Client goals</h2>
       <p>Inpulso 43 needed to scale customer reception without hiring more staff. Patients message at all hours — booking evaluations, asking prices, joining workshop waitlists. The team couldn't respond to everyone manually.</p>
@@ -62,7 +75,7 @@
       <p>Alessia is a conversational AI built with Google Gemini and Flask. It runs on DigitalOcean with Docker and connects to WhatsApp Business API, Google Calendar, Google Sheets, and a SQLite database.</p>
       <div class="modules-grid">
         <article class="module-card"><h3>WhatsApp reception</h3><p>Handles patient messages 24/7 with warm, human-like responses in Spanish.</p></article>
-        <article class="module-card"><h3>Web chat widget</h3><p>Same brain powers a floating chat on inpulso43.com — unified API.</p></article>
+        <article class="module-card"><h3>Business integrations</h3><p>The assistant connects to Google Calendar, Sheets, and SQLite-backed workflows through its tools.</p></article>
         <article class="module-card"><h3>25+ business tools</h3><p>Book, reschedule, cancel appointments; manage workshops; confirm payments; escalate to humans.</p></article>
         <article class="module-card"><h3>Automated jobs</h3><p>Appointment reminders, waitlist notifications, and scheduled background tasks.</p></article>
       </div>
@@ -72,7 +85,7 @@
       <h2>Architecture</h2>
       <div class="arch-diagram" role="img" aria-label="Alessia architecture diagram">
         <div class="arch-row">
-          <div class="arch-box">Patient<br><small>WhatsApp / Web</small></div>
+          <div class="arch-box">Patient<br><small>WhatsApp</small></div>
           <div class="arch-arrow">→</div>
           <div class="arch-box arch-box--accent">Flask API<br><small>servidor.py</small></div>
           <div class="arch-arrow">→</div>
@@ -89,13 +102,13 @@
     </section>
 
     <section class="case-study__section reveal">
-      <h2>Why these technologies</h2>
+      <h2 id="engineering">Engineering decisions &amp; tradeoffs</h2>
       <ul class="case-list">
         <li><strong>Python + Flask</strong> — Fast to iterate, excellent for AI integrations and webhooks</li>
         <li><strong>Gemini</strong> — Strong Spanish conversation and reliable function calling for business tools</li>
         <li><strong>SQLite</strong> — Lightweight persistence for patient memory and job queues at this scale</li>
-        <li><strong>Docker</strong> — Consistent deployments and easy scaling on DigitalOcean</li>
-      </ul>
+        <li><strong>Docker</strong> — Consistent runtime packaging on DigitalOcean. The current deployment uses one web worker while the scheduler remains inside the app.</li>
+      <li><strong>Scheduler boundary</strong> — The repository documents moving scheduled jobs into a separate worker before adding web workers, to avoid duplicate reminders.</li></ul>
     </section>
 
     <section class="case-study__section reveal">
@@ -103,32 +116,14 @@
       <div class="results-grid">
         <div class="result-card"><strong>24/7</strong><span>Automated reception</span></div>
         <div class="result-card"><strong>25+</strong><span>Business tools integrated</span></div>
-        <div class="result-card"><strong>2 channels</strong><span>WhatsApp + web chat</span></div>
-        <div class="result-card"><strong>Open source</strong><span>Public GitHub repo</span></div>
+        <div class="result-card"><strong>WhatsApp</strong><span>Primary customer interface</span></div>
+        <div class="result-card"><strong>Public repository</strong><span>Public GitHub repo</span></div>
       </div>
     </section>
 
-    <section class="case-study__section reveal">
-      <h2>Screenshots</h2>
-      <div class="screenshots-duo">
-        <figure>
-          <img src="assets/screenshots/inpulso-home.png" alt="Inpulso 43 with Alessia web chat" loading="lazy" width="700" height="400">
-          <figcaption>Desktop — inpulso43.com with chat widget</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screenshots/inpulso-home-mobile.png" alt="Inpulso 43 mobile" loading="lazy" width="390" height="844" class="screenshot-mobile">
-          <figcaption>Mobile — responsive site + chat</figcaption>
-        </figure>
-      </div>
-    </section>
 
-    <section class="testimonial reveal">
-      <blockquote class="testimonial__quote">"The AI assistant handles our WhatsApp professionally — patients book evaluations and ask about workshops without waiting for office hours."</blockquote>
-      <footer class="testimonial__author">
-        <div class="testimonial__avatar">I43</div>
-        <div><strong>Inpulso 43 Team</strong><span>Human Development Center</span></div>
-      </footer>
-    </section>
+
+
 
     <section class="case-study__section reveal">
       <h2>Technologies</h2>
@@ -139,8 +134,8 @@
     </section>
 
     <section class="case-study__cta reveal">
-      <h2>Need an AI assistant for your business?</h2>
-      <a href="#" data-wa class="btn btn--wa btn--lg">Discuss on WhatsApp</a>
+      <h2>Building an AI-powered product?</h2>
+      <a href="mailto:alessandrogayttan@gmail.com" class="btn btn--primary btn--lg">Discuss an opportunity</a>
     </section>
   </main>
 
@@ -150,6 +145,6 @@
   </footer>
 
   <script src="site-config.js"></script>
-  <script src="script.js" defer></script>
+  <script src="studio.js" defer></script>
 </body>
 </html>
