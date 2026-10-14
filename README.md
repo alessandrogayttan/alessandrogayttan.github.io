@@ -16,7 +16,11 @@ Career-focused portfolio: full-stack development, applied AI, and automation. Bu
 
 ## Design and interactions
 
-The shared `studio.css` layer supplies a cream, mint, and lilac visual identity. The homepage includes a CSS illustration, animated decorative elements, project previews, and an interactive explanation of Alessia's architecture. `studio.js` provides progressive enhancement, accessible mobile navigation, scroll reveals, motion controls, and architecture interactions. Content remains readable without JavaScript, and system reduced-motion preferences are respected.
+The shared `glass.css` layer supplies an obsidian, steel-blue, and optical-glass visual identity. Reflective CSS rings surround a glass monogram in the hero. Glass surfaces use layered highlights, inset edges, and backdrop blur, with a solid fallback. A fine pointer adds restrained perspective and specular movement; reduced-motion preferences and the pause control disable movement.
+
+Alessia is presented as Inpulso 43's AI assistant on WhatsApp. Its homepage and case-study demos contain clearly labeled, local illustrative conversations for appointments, workshops, and human support. They do not call the assistant API, process patient information, or claim to show actual conversations. The real WhatsApp button uses the contact number published by Inpulso 43 and opens a prefilled draft without sending it. Personal opportunity CTAs use Alessandro's email, rather than the business WhatsApp number.
+
+`studio.js` provides progressive enhancement, accessible mobile navigation, scroll reveals, motion controls, architecture interactions, and the conversation examples. Content remains readable without JavaScript.
 
 `styles.css` retains the underlying layout rules for existing case studies. The former `script.js` is retained for history but is no longer loaded by the pages. There are no framework or build dependencies.
 
@@ -28,7 +32,7 @@ Use the résumé page's Print / Save as PDF button for a single-column, text-bas
 
 ## Validation of this revision
 
-Browser checks covered all five pages at 320, 390, 768, and 1440 pixels: no horizontal overflow, missing images, or JavaScript errors. Internal paths and anchors were checked. Mobile menu opening, link dismissal, Escape, architecture selection, motion pause, reduced motion, and no-JavaScript content visibility were verified. The printed profile was rendered and visually reviewed as one A4 page. These checks are not a full accessibility audit or production performance benchmark.
+Browser checks covered all five pages at 320, 390, 768, and 1440 pixels: no horizontal overflow, missing images, or JavaScript errors. Internal paths and anchors were checked. Mobile menu opening, link dismissal, Escape, architecture selection, motion pause, reduced motion, and no-JavaScript content visibility were verified. Both WhatsApp demos were checked for scenario changes, selected states, disclosure, and correct external destination. Inpulso website screenshots have been removed from the Alessia case study. The printed profile was rendered and visually reviewed as one A4 page. These checks are not a full accessibility audit or production performance benchmark.
 
 ## Content maintenance
 
