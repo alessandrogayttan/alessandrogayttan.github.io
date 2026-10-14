@@ -1,0 +1,18 @@
+name: Agent Reliability Lab tests
+on:
+  push:
+    paths: ['agent-lab/**', '.github/workflows/agent-lab-tests.yml']
+  pull_request:
+    paths: ['agent-lab/**', '.github/workflows/agent-lab-tests.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test agent-lab/tests/*.test.mjs
+      - run: node agent-lab/cli.mjs duplicate-delivery
