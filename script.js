@@ -2,7 +2,7 @@
   'use strict';
 
   const cfg = window.SITE_CONFIG || {
-    whatsapp: '523324453536',
+    whatsapp: '523326505999',
     whatsappMessage: "Hi Alessandro, I'd like to discuss a project.",
   };
 

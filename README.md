@@ -1,4 +1,4 @@
-# Alessandro Gayttan — Portfolio
+# Henrri Alessandro Gaytán Cardenas — Portfolio
 
 Career-focused portfolio: full-stack development, applied AI, and automation. Built as a lightweight static site on GitHub Pages.
 
@@ -18,7 +18,7 @@ Career-focused portfolio: full-stack development, applied AI, and automation. Bu
 
 The shared `glass.css` layer supplies an obsidian, steel-blue, and optical-glass visual identity. Reflective CSS rings surround a glass monogram in the hero. Glass surfaces use layered highlights, inset edges, and backdrop blur, with a solid fallback. A fine pointer adds restrained perspective and specular movement; reduced-motion preferences and the pause control disable movement.
 
-Alessia is presented as Inpulso 43's AI assistant on WhatsApp. Its homepage and case-study demos contain clearly labeled, local illustrative conversations for appointments, workshops, and human support. They do not call the assistant API, process patient information, or claim to show actual conversations. The real WhatsApp button uses the contact number published by Inpulso 43 and opens a prefilled draft without sending it. Personal opportunity CTAs use Alessandro's email, rather than the business WhatsApp number.
+Alessia is presented as Inpulso 43's AI assistant on WhatsApp. Its homepage and case-study demos contain clearly labeled, local illustrative conversations for appointments, workshops, and human support. They do not call the assistant API, process patient information, or claim to show actual conversations. The real WhatsApp button uses the contact number published by Inpulso 43 and opens a prefilled draft without sending it. Personal opportunity CTAs use Henrri Alessandro's email and personal WhatsApp (+52 33 2650 5999). The Inpulso business number remains separate for Alessia.
 
 `studio.js` provides progressive enhancement, accessible mobile navigation, scroll reveals, motion controls, architecture interactions, and the conversation examples. Content remains readable without JavaScript.
 
@@ -52,4 +52,4 @@ python scripts/capture-screenshots.py
 
 Requires: `python -m pip install playwright && python -m playwright install chromium`
 
-© 2026 Alessandro Gayttan
+© 2026 Henrri Alessandro Gaytán Cardenas
