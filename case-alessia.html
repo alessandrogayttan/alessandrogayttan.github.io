@@ -10,22 +10,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="studio.css">
 </head>
 <body class="case-page">
   <div class="grain" aria-hidden="true"></div>
   <div class="orb orb--red" aria-hidden="true"></div>
   <div class="orb orb--blue" aria-hidden="true"></div>
 
-  <header class="nav nav--scrolled" id="nav">
-    <a href="index.html" class="nav__logo">AG<span class="nav__dot">.</span></a>
-    <nav class="nav__links">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    <a href="https://github.com/alessandrogayttan/alessia-whatsapp" target="_blank" rel="noopener" class="nav__cta">GitHub ↗</a>
-  </header>
+  <header class="nav" id="nav">
+<a href="index.html" class="nav__logo" aria-label="Alessandro Gayttan home">ag<span class="nav__dot">✳</span></a>
+<button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+<nav class="nav__links" id="navLinks" aria-label="Main navigation"><a href="index.html#work">Selected work</a><a href="index.html#expertise">Expertise</a><a href="about.html">About me</a><a href="resume.html">Résumé</a></nav>
+<a href="mailto:alessandrogayttan@gmail.com" class="nav__cta">Let’s talk <span aria-hidden="true">↗</span></a></header>
 
-  <main class="case-study">
+  <a href="#main" class="skip-link">Skip to content</a><main class="case-study" id="main">
     <header class="case-study__hero reveal">
       <a href="index.html" class="case-study__back">← Back to portfolio</a>
       <p class="eyebrow">Case study</p>
@@ -33,7 +31,7 @@
       <p class="case-study__subtitle">AI receptionist for WhatsApp and web — books appointments, manages workshops, sends reminders, and escalates to humans when needed.</p>
       <div class="case-study__meta">
         <span class="tag tag--live">Live in production</span>
-        <span class="tag">Open source</span>
+        <span class="tag">Public repository</span>
         <span class="tag">Python · Flask · Gemini</span>
       </div>
       <div class="case-study__links">
@@ -89,13 +87,13 @@
     </section>
 
     <section class="case-study__section reveal">
-      <h2>Why these technologies</h2>
+      <h2 id="engineering">Engineering decisions &amp; tradeoffs</h2>
       <ul class="case-list">
         <li><strong>Python + Flask</strong> — Fast to iterate, excellent for AI integrations and webhooks</li>
         <li><strong>Gemini</strong> — Strong Spanish conversation and reliable function calling for business tools</li>
         <li><strong>SQLite</strong> — Lightweight persistence for patient memory and job queues at this scale</li>
-        <li><strong>Docker</strong> — Consistent deployments and easy scaling on DigitalOcean</li>
-      </ul>
+        <li><strong>Docker</strong> — Consistent runtime packaging on DigitalOcean. The current deployment uses one web worker while the scheduler remains inside the app.</li>
+      <li><strong>Scheduler boundary</strong> — The repository documents moving scheduled jobs into a separate worker before adding web workers, to avoid duplicate reminders.</li></ul>
     </section>
 
     <section class="case-study__section reveal">
@@ -104,7 +102,7 @@
         <div class="result-card"><strong>24/7</strong><span>Automated reception</span></div>
         <div class="result-card"><strong>25+</strong><span>Business tools integrated</span></div>
         <div class="result-card"><strong>2 channels</strong><span>WhatsApp + web chat</span></div>
-        <div class="result-card"><strong>Open source</strong><span>Public GitHub repo</span></div>
+        <div class="result-card"><strong>Public repository</strong><span>Public GitHub repo</span></div>
       </div>
     </section>
 
@@ -122,13 +120,7 @@
       </div>
     </section>
 
-    <section class="testimonial reveal">
-      <blockquote class="testimonial__quote">"The AI assistant handles our WhatsApp professionally — patients book evaluations and ask about workshops without waiting for office hours."</blockquote>
-      <footer class="testimonial__author">
-        <div class="testimonial__avatar">I43</div>
-        <div><strong>Inpulso 43 Team</strong><span>Human Development Center</span></div>
-      </footer>
-    </section>
+
 
     <section class="case-study__section reveal">
       <h2>Technologies</h2>
@@ -139,8 +131,8 @@
     </section>
 
     <section class="case-study__cta reveal">
-      <h2>Need an AI assistant for your business?</h2>
-      <a href="#" data-wa class="btn btn--wa btn--lg">Discuss on WhatsApp</a>
+      <h2>Building an AI-powered product?</h2>
+      <a href="#" data-wa class="btn btn--wa btn--lg">Discuss an opportunity</a>
     </section>
   </main>
 
@@ -150,6 +142,6 @@
   </footer>
 
   <script src="site-config.js"></script>
-  <script src="script.js" defer></script>
+  <script src="studio.js" defer></script>
 </body>
 </html>
