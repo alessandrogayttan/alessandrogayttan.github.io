@@ -32,7 +32,7 @@ Edit `site-config.js`:
 
 Add `assets/photo.jpg` and update `index.html` + `about.html`:
 ```html
-<img src="assets/photo.jpg" alt="Alessandro Gayttan" ...>
+<img src="assets/photo.jpg" alt="Henrri Alessandro Gaytán Cardenas" ...>
 ```
 
 ## 5. Re-capture screenshots after domain change
