@@ -1,0 +1,9 @@
+{
+  "name": "agent-reliability-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first, deterministic reliability workbench for tool-using agents.",
+  "scripts": {"test": "node --test tests/*.test.mjs", "check": "node cli.mjs duplicate-delivery"},
+  "engines": {"node": ">=20"}
+}
