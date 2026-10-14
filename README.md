@@ -24,7 +24,7 @@ The shared `studio.css` layer supplies a cream, mint, and lilac visual identity.
 
 Run `python -m http.server 8765 --bind 127.0.0.1` from this directory, then open `http://127.0.0.1:8765`.
 
-Use the résumé page's Print / Save as PDF button for a single-column, text-based professional profile. Its project-based format deliberately avoids inventing employers, education, or dates that have not been supplied.
+Use the résumé page's Print / Save as PDF button for a single-column, text-based professional profile. The current Google DeepMind AI Developer L3 role was supplied by Alessandro. Start dates, responsibilities, education, and impact metrics have not been added without his input.
 
 ## Validation of this revision
 
