@@ -31,7 +31,7 @@
     "sameAs": ["https://github.com/alessandrogayttan"]
   }
   </script>
-<link rel="stylesheet" href="glass.css">
+<link rel="stylesheet" href="glass.css?v=campus-video-2">
 </head>
 <body class="studio-home"><a href="#main" class="skip-link">Skip to content</a>
 <div class="reading-progress" aria-hidden="true"></div><header class="nav glass-surface" id="nav">
@@ -87,10 +87,16 @@
         <div class="case-card__visual case-card__visual--inpulso">
           <div class="browser-frame">
             <div class="browser-frame__bar"><span></span><span></span><span></span><div class="browser-frame__url">Campus Inpulso</div></div>
-            <div class="browser-frame__screen"><video class="campus-walkthrough" aria-label="Campus Inpulso 3D library walkthrough" controls playsinline preload="none" poster="assets/screenshots/campus-biblioteca-3d.jpg">
-                <source src="assets/videos/campus-inpulso-recorrido.mp4" type="video/mp4">
-                <a href="assets/videos/campus-inpulso-recorrido.mp4">Download the Campus walkthrough</a>
-              </video></div>
+            <div class="browser-frame__screen campus-walkthrough-screen">
+              <video class="campus-walkthrough campus-walkthrough--desktop" aria-label="Campus Inpulso desktop preview" width="1280" height="720" controls playsinline preload="none" poster="assets/screenshots/campus-biblioteca-3d.jpg">
+                <source src="assets/videos/campus-inpulso-preview.mp4" type="video/mp4">
+                <a href="assets/videos/campus-inpulso-preview.mp4">Open the Campus preview</a>
+              </video>
+              <video class="campus-walkthrough campus-walkthrough--mobile" aria-label="Campus Inpulso mobile preview" width="576" height="1024" controls playsinline preload="none" poster="assets/screenshots/campus-inpulso-mobile-poster.jpg">
+                <source src="assets/videos/campus-inpulso-mobile.mp4" type="video/mp4">
+                <a href="assets/videos/campus-inpulso-mobile.mp4">Open the Campus preview</a>
+              </video>
+            </div>
           </div>
         </div>
         <div class="case-card__body">
@@ -102,7 +108,9 @@
             <div class="case-detail__block"><h4>Find a workshop</h4><p>Search by title or filter the catalog by topic. Workshop pages show the instructor, format, and price.</p></div>
             <div class="case-detail__block"><h4>Enroll</h4><p>Find free and paid workshops and continue to enrollment from each listing.</p></div>
           </div>
-          <div class="case-card__links"><a href="https://www.inpulso43.com/campus?view=catalogo" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Explore Campus ↗</a></div>
+          <div class="case-card__links"><a href="https://www.inpulso43.com/campus?view=catalogo" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Explore Campus ↗</a>
+            <a class="btn btn--ghost btn--sm campus-mobile-link" href="assets/videos/campus-inpulso-mobile.mp4">Mobile preview ↗</a>
+          </div>
         </div>
       </article>
 
