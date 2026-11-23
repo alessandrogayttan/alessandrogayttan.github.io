@@ -51,13 +51,14 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('is-open')) closeMenu(true); });
     document.addEventListener('click', e => { if (!nav.contains(e.target)) closeMenu(false); });
   }
-  if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-    }), { threshold: 0.06 });
-    document.documentElement.classList.add('js-reveal');
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  }
+  document.querySelectorAll('img[data-preview-src]').forEach(preview => {
+    const candidate = new Image();
+    candidate.addEventListener('load', () => {
+      preview.src = candidate.src;
+      preview.alt = preview.dataset.previewAlt;
+    }, { once: true });
+    candidate.src = preview.dataset.previewSrc;
+  });
   const layers = [
     ['01 / CHANNELS', 'Meet people where they are.', 'WhatsApp is Alessia’s primary interface for Inpulso 43. The WhatsApp Business API delivers messages to the Flask webhook layer.'],
     ['02 / CONVERSATION', 'Give the conversation a purpose.', 'The Gemini conversation layer connects natural-language requests to the assistant’s business tools. A human handoff remains part of the workflow.'],

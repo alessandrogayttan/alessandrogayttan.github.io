@@ -200,8 +200,6 @@ section { max-width: 1300px; padding-top: 90px; padding-bottom: 70px; }
 .contact-direct a:hover { text-decoration: underline; }
 .footer { max-width: 1300px; font-size: 10px; }
 .reveal { opacity: 1; transform: none; }
-.js-reveal .reveal { opacity: 0; transform: translateY(20px); }
-.js-reveal .reveal.visible { opacity: 1; transform: none; }
 /* Existing case-study and profile templates share the same optical system. */
 .case-page .case-study, .about { max-width: 1050px; padding-top: 150px; }
 .case-study__hero h1 { font-size: 70px; font-weight: 600; letter-spacing: -4px; }
@@ -324,6 +322,5 @@ html.motion-paused { scroll-behavior: auto; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .js-reveal .reveal { opacity: 1; transform: none; }
   .browser-frame { transform: none; }
 }
