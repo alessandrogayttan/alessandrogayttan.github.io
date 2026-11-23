@@ -11,7 +11,7 @@ Career-focused portfolio: full-stack development, applied AI, and automation. Bu
 | Home | `/index.html` |
 | About | `/about.html` |
 | Inpulso case study | `/case-inpulso.html` |
-| Workshop library project | `/#biblioteca` |
+| Campus project | `/#biblioteca` |
 | Alessia case study | `/case-alessia.html` |
 | Printable professional profile | `/resume.html` |
 
