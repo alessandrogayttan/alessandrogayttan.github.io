@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agent Reliability Lab: reproducible tests for duplicate writes, retries, permissions and budgets.">
+  <title>Agent Reliability Lab Case Study | Henrri Alessandro Gaytán Cardenas</title>
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="glass.css">
+</head>
+<body class="case-page">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orb orb--red" aria-hidden="true"></div>
+  <div class="orb orb--blue" aria-hidden="true"></div>
+
+  <header class="nav glass-surface" id="nav">
+<a href="index.html" class="nav__logo" aria-label="Henrri Alessandro Gaytán Cardenas home">AG<span class="nav__dot">/</span></a>
+<button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+<nav class="nav__links" id="navLinks" aria-label="Main navigation"><a href="index.html#work">Selected work</a><a href="index.html#expertise">Expertise</a><a href="about.html">About me</a><a href="resume.html">Résumé</a></nav>
+<a href="mailto:alessandrogayttan@gmail.com" class="nav__cta">Let’s talk <span aria-hidden="true">↗</span></a></header>
+
+  <a href="#main" class="skip-link">Skip to content</a><main class="case-study" id="main"><header class="case-study__hero reveal"><a href="index.html#work" class="case-study__back">← Back to selected work</a><p class="eyebrow">Independent project / AI engineering</p><h1>Agent Reliability Lab</h1><p class="case-study__subtitle">Make agent failures reproducible. Inspect what happened, change the policy, and see which protections actually make a difference.</p><div class="case-study__meta"><span class="tag tag--live">Public interactive demo</span><span class="tag">Deterministic simulation</span><span class="tag">Browser + Node CLI</span></div><div class="case-study__links"><a href="agent-lab/" class="btn btn--primary">Open the workbench ↗</a><a href="https://github.com/alessandrogayttan/alessandrogayttan.github.io/tree/main/agent-lab" class="btn btn--ghost">Explore the source ↗</a></div></header>
+<section class="case-study__section reveal"><img src="assets/screenshots/agent-lab.png" alt="Agent Reliability Lab showing a replayed duplicate booking scenario" style="width:100%;border-radius:16px" width="1440" height="1000"><h2>The problem</h2><p>An agent can produce a reasonable answer while repeating a booking, retrying an uncertain write, or exhausting its budget. Those failures happen between the conversation and its tools.</p></section>
+<section class="case-study__section reveal"><h2>A test bench you can explore</h2><p>Six synthetic cases cover duplicate delivery, transient outages, missing permissions, expensive retries, ambiguous writes and an Alessia appointment flow. Each event has an explicit cost, latency, outcome sequence and operation identity.</p><p>Configure the policy, replay the trace and inspect why each action succeeded, was blocked, was deduplicated or needs reconciliation. A baseline comparison keeps the same retry and budget limits while removing write gates.</p><div class="tech-row"><span>Reproducible fixtures</span><span>Policy comparison</span><span>JSON import</span><span>HTML + JSON reports</span></div></section>
+<section class="case-study__section reveal"><h2>Engineering decisions</h2><ul class="case-list"><li><strong>One pure engine:</strong> the browser and Node CLI use the same deterministic simulation core.</li><li><strong>Unknown is a real state:</strong> a write that may have completed is quarantined instead of blindly retried.</li><li><strong>Identity includes arguments:</strong> operation IDs reused with different inputs fail explicitly.</li><li><strong>Budgets include failures:</strong> every attempted call consumes its fixture cost before another retry is allowed.</li><li><strong>Bounded imports:</strong> schema validation limits size, nesting, tools and dependency references; imported text is rendered without HTML execution.</li></ul></section>
+<section class="case-study__section reveal"><h2>Connection to Alessia</h2><p>A trace adapter maps selected public Alessia tool names into the lab's contract. Write timeouts become unknown results by default. The included appointment case is synthetic and does not call WhatsApp, access patient records or create real appointments.</p><p>A live staging connector, durable idempotency store and provider usage measurement are future milestones. This public release is a working reliability simulator, not a production agent gateway.</p><a href="case-alessia.html" class="btn btn--ghost">Explore Alessia ↗</a></section>
+<section class="case-study__section reveal"><h2>Validation and limits</h2><p>Automated engine tests cover duplicate writes, retry accounting, budget exhaustion, approval checks, uncertain results, schema rejection, escaped reports and the Alessia adapter. Browser checks cover scenario execution, imports, export, saved runs and responsive layouts.</p><p>Four assertions check specific invariants. Passing them does not prove overall agent quality or successful task completion. Fixture costs and virtual durations are estimates, not production benchmarks.</p></section>
+<section class="case-study__cta reveal"><h2>Try breaking an agent workflow.</h2><a href="agent-lab/" class="btn btn--primary btn--lg">Launch Agent Reliability Lab ↗</a></section></main>  <footer class="footer">
+    <p>© 2026 Henrri Alessandro Gaytán Cardenas</p>
+    <a href="index.html">← Portfolio</a>
+  </footer>
+
+  <script src="site-config.js"></script>
+  <script src="studio.js" defer></script>
+</body>
+</html>
