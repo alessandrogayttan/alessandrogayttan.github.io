@@ -1,7 +1,7 @@
 /* Site-wide config — update these values when you get your domain, Calendly, or LinkedIn */
 window.SITE_CONFIG = {
   name: 'Henrri Alessandro Gaytán Cardenas',
-  tagline: 'Production-ready websites, business systems & AI automations',
+  tagline: 'Full-stack web development and business software',
   email: 'alessandrogayttan@gmail.com',
   whatsapp: '523326505999',
   inpulsoWhatsapp: '523324453536',
