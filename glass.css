@@ -324,3 +324,5 @@ html.motion-paused { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .browser-frame { transform: none; }
 }
+
+.campus-walkthrough { display: block; width: 100%; height: 100%; object-fit: contain; background: #0b121d; }
